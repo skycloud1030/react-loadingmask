@@ -1,0 +1,39 @@
+/*loadingMask.css*/
+.loadingMask {
+    position: fixed;
+    /*top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    z-index: 999;
+}
+.global{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loadingMask .backColor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*IE Hack*/
+    filter: alpha(opacity=50); /*IE Hack*/
+    opacity: 0.5;
+}
+
+.loadingMask .backGif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url("images/ajax-loader.gif") no-repeat center center;
+}
+.global .backGif{
+    background: url("images/ajax-loader.gif") no-repeat center center;
+}
