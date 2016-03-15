@@ -1,7 +1,7 @@
 {
   "name": "React-loadingmask",
   "tagline": "react-loadingmask",
-  "body": "# react-loadingmask\r\nreact-loadingmask\r\n\r\n### Install\r\n```\r\nnpm i --save react-loadingmask\r\n```\r\n\r\n### Usage\r\n```\r\nimport {LoadingMask} from 'react-loadingmask';\r\nrequire('../css/loadingMask.css');\r\n\r\n<LoadingMask state={true}>\r\n  <div style={{width:500,height:300}}>\r\n    Compoment You want to display\r\n  </div>\r\n</LoadingMask>\r\n\r\n```\r\n### License\r\n```\r\nMIT\r\n```\r\n",
-  "google": "",
+  "body": "# react-loadingmask\r\nreact-loadingmask\r\n\r\n## Install\r\n\r\n```\r\nnpm i --save react-loadingmask\r\n```\r\n\r\n## Demo\r\n\r\n[compomentMask](http://skycloud1030.github.io/react-loadingmask/example/compomentMask.html)\r\n\r\n[globalMask](http://skycloud1030.github.io/react-loadingmask/example/globalMask.html)\r\n\r\n## Usage\r\n\r\ncompomentMask <br/>\r\n```\r\nimport {LoadingMask} from 'react-loadingmask';\r\nrequire('../css/loadingMask.css');\r\n\r\n<LoadingMask state={true}>\r\n  <div style={{width:500,height:300}}>\r\n    Compoment You want to display\r\n  </div>\r\n</LoadingMask>\r\n```\r\n\r\nglobalMask <br/>\r\n```\r\nimport {LoadingMask} from 'react-loadingmask';\r\nrequire('../css/loadingMask.css');\r\n\r\n<div>\r\n  <LoadingMask state={true}/>\r\n  <div style={{width:500,height:300}}>\r\n    Compoment You want to display\r\n  </div>\r\n</div>\r\n```\r\n\r\n## License\r\n\r\n```\r\nMIT\r\n```\r\n",
+  "google": "UA-75123639-1",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
