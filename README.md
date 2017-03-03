@@ -7,38 +7,28 @@ react-loadingmask
 npm i --save react-loadingmask
 ```
 
-## Demo
-
-[compomentMask](http://skycloud1030.github.io/react-loadingmask/example/compomentMask.html)
-
-[globalMask](http://skycloud1030.github.io/react-loadingmask/example/globalMask.html)
-
 ## Usage
-
-compomentMask <br/>
 ```
 import {LoadingMask} from 'react-loadingmask';
-require('../css/loadingMask.css');
+import 'react-loadingmask/dist/bundle.css';
 
-<LoadingMask state={true}>
+<LoadingMask
+  loading={true}
+  loadingText={"loading..."}>
   <div style={{width:500,height:300}}>
     Compoment You want to display
   </div>
 </LoadingMask>
 ```
 
-globalMask <br/>
-```
-import {LoadingMask} from 'react-loadingmask';
-require('../css/loadingMask.css');
+## loading
+true||false
 
-<div>
-  <LoadingMask state={true}/>
-  <div style={{width:500,height:300}}>
-    Compoment You want to display
-  </div>
-</div>
-```
+## loadingText
+text to show
+
+## Demo
+[demo](http://skycloud1030.github.io/react-loadingmask/demo/demo.html)
 
 ## License
 
