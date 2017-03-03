@@ -1,9 +1,8 @@
 {
-  "name": "reactDemo",
+  "name": "react-loadingmask-demo",
   "version": "1.0.5",
   "description": "react-loadingmask",
   "license": "MIT",
-  "main": "dist/react-loadingmask.js",
   "keywords": [
     "react",
     "loadmask",
@@ -16,28 +15,29 @@
     "url": "https://github.com/skycloud1030/react-loadingmask"
   },
   "scripts": {
-    "start": "webpack --progress --colors --watch",
-    "build": "webpack",
-    "min": "webpack --min"
+    "start": "webpack --progress --colors --watch --mode development",
+    "build": "webpack --mode production --progress --color"
   },
   "dependencies": {
     "classnames": "^2.2.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-loadingmask": "^2.0.0"
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-loadingmask": "git+https://github.com/skycloud1030/react-loadingmask.git"
   },
   "devDependencies": {
-    "react-loader": "^2.0.0",
     "babel-core": "^6.5.2",
-    "babel-loader": "^6.2.2",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
-    "css-loader": "^0.22.0",
-    "extract-text-webpack-plugin": "^0.9.1",
-    "file-loader": "^0.8.4",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.6",
-    "webpack": "^1.12.4"
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "react-loader": "^2.0.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
