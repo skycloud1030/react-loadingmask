@@ -125,7 +125,7 @@ var LoadingMask = exports.LoadingMask = function (_React$Component) {
         value: function render() {
             var className = this.props.className;
 
-            var loadingCss = this.props.loading ? "loading-mask" : "";
+            var loadingCss = this.props.loading ? "loading-mask" : "loading-mask-hide";
             loadingCss = (0, _classnames2.default)(className, loadingCss);
             return _react2.default.createElement(
                 'div',

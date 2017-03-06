@@ -1,6 +1,11 @@
+/*react-loadingmask.css*/
 .loading-mask {
     position: relative;
     height: inherit;
+}
+
+.loading-mask-hide {
+    position: relative;
 }
 
 @keyframes spin {
@@ -28,7 +33,7 @@
     position: absolute;
     width: 100%;
     color: #fff;
-    top:50%;
+    top: 50%;
     padding-top: 14px;
     font-size: 14px;
     opacity: 1;
@@ -50,7 +55,7 @@
     height: 24px;
     margin: -15px;
     left: 50%;
-    top:50%;
+    top: 50%;
     animation: 3s linear 0s normal none infinite running spin;
     filter: drop-shadow(0 0 2 rgba(0, 0, 0, 0.33));
     z-index: 2;

@@ -10,7 +10,7 @@ export class LoadingMask extends React.Component {
     }
     render() {
         let {className}=this.props;
-        let loadingCss = (this.props.loading)? "loading-mask": "";
+        let loadingCss = (this.props.loading)? "loading-mask": "loading-mask-hide";
         loadingCss = classNames(className,loadingCss);
         return (
             <div className={loadingCss}>
