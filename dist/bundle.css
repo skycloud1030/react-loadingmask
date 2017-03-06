@@ -1,5 +1,6 @@
 .loading-mask {
     position: relative;
+    height: inherit;
 }
 
 @keyframes spin {

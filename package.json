@@ -1,6 +1,6 @@
 {
   "name": "react-loadingmask",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "react-loadingmask",
   "license": "MIT",
   "main": "dist/bundle.js",
