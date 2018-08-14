@@ -1,9 +1,9 @@
 {
   "name": "react-loadingmask",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "react-loadingmask",
   "license": "MIT",
-  "main": "dist/bundle.js",
+  "main": "dist/react-loadingmask.js",
   "keywords": [
     "react",
     "loadmask",
@@ -16,22 +16,33 @@
     "url": "https://github.com/skycloud1030/react-loadingmask"
   },
   "scripts": {
-    "start": "webpack --progress --colors --watch",
-    "build": "webpack",
-    "min": "webpack --min"
+    "start": "webpack --progress --colors --watch --mode development",
+    "build": "webpack --mode production --progress --color",
+    "test": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --coverage"
   },
+  "files": [
+    "fonts",
+    "dist"
+  ],
   "dependencies": {
-    "classnames": "^2.2.5",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "classnames": "^2.2.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0",
-    "webpack": "^2.2.1"
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "coveralls": "^3.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.5.0",
+    "react-loader": "^2.4.5",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8"
   }
 }

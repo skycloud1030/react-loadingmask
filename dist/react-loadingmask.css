@@ -1,0 +1,83 @@
+.rc-loading,
+.rc-loading-hide {
+  position: relative;
+}
+
+.rc-loading::before {
+  content: "";
+  display: table;
+}
+
+.rc-loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rc-loading-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+}
+.rc-loading .rc-loading-content {
+  opacity: 0.5;
+}
+
+.rc-loading-hide .rc-loading-mask {
+  display: none;
+}
+
+.rc-loading .rc-loading-mask {
+  z-index: 2;
+}
+
+.rc-loading .rc-loading-icon {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 100%;
+  cursor: default;
+  margin-top: -12px;
+  color: #fff;
+}
+
+.rc-loading-icon-default {
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent #fff #fff #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: 3s linear 0s normal none infinite running spin;
+  filter: drop-shadow(0 0 2 rgba(0, 0, 0, 0.33));
+  display: inline-block;
+}
+
+.rc-loading .rc-loading-text {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  top: 50%;
+  padding-top: 24px;
+  font-size: 14px;
+  opacity: 1;
+}
