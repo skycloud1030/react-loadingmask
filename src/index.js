@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import LoadingMask from "react-loadingmask";
 import "react-loadingmask/dist/react-loadingmask.css";
-import "./index.css";
+import "./index.css"; // User Customize
 
 const Spin = <i className="fas fa-sync-alt fa-spin" style={{ fontSize: 24 }} />;
 const margin = { marginBottom: 20 };
+
 class Demo extends React.Component {
   constructor(props) {
     super(props);

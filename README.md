@@ -8,7 +8,6 @@
 
 A Loading Component for displaying loading state of a page or a section.
 
-
 ## Install
 
 ```sh
@@ -24,12 +23,12 @@ import "react-loadingmask/dist/react-loadingmask.css";
 
 <LoadingMask loading={true} text={"loading..."}>
   <div style={{ width: 500, height: 300 }}>Compoment You want to display</div>
-</LoadingMask>;
+</LoadingMask>
 ```
 
 ## Demo
 
-- [preview](https://skycloud1030.github.io/react-loadingmask/example/index.html)
+- [preview](https://skycloud1030.github.io/react-loadingmask/example/)
 - [code](https://github.com/skycloud1030/react-loadingmask/blob/gh-pages/src/index.js)
 
 ## Properties
@@ -37,5 +36,5 @@ import "react-loadingmask/dist/react-loadingmask.css";
 | Props     | Type      | Description                          | Default |
 | :-------- | :-------- | :----------------------------------- | :------ |
 | loading   | boolean   | Loading status                       | false   |
-| text      | string    | customize description content        | -       |
+| text      | string    | Customize description content        | -       |
 | indicator | ReactNode | React node of the spinning indicator | -       |
