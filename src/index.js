@@ -1,5 +1,4 @@
 import React from "react";
-
 /**
  * A spinner component for displaying loading state of a page or a section
  */
