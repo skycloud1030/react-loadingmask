@@ -7,6 +7,8 @@ export default class LoadingMask extends React.PureComponent {
     loading: false,
     text: "",
     prefixCls: "rc-loading",
+    className: "",
+    style: {},
     indicator: <span className="rc-loading-icon-default" />
   };
   render() {
