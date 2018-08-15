@@ -18,28 +18,23 @@ yarn add react-loadingmask --save
 ## Getting Started
 
 ```js
-import { LoadingMask } from "react-loadingmask";
+import LoadingMask from "react-loadingmask";
 import "react-loadingmask/dist/react-loadingmask.css";
 
 <LoadingMask loading={true} text={"loading..."}>
   <div style={{ width: 500, height: 300 }}>Compoment You want to display</div>
 </LoadingMask>
-
 ```
 
 ## Demo
 
-- [preview](https://skycloud1030.github.io/react-loadingmask/demo/demo.html)
-- [code](https://github.com/skycloud1030/react-loadingmask/blob/gh-pages/app/demo.jsx)
-
+- [preview](https://skycloud1030.github.io/react-loadingmask/example/)
+- [code](https://github.com/skycloud1030/react-loadingmask/blob/gh-pages/src/index.js)
 
 ## Properties
 
-| Props   | Type    | Description                   | Default |
-| :------ | :------ | :---------------------------- | :------ |
-| loading | boolean | Loading status                | false   |
-| text    | string  | customize description content | -       |
-
-
-
-
+| Props     | Type      | Description                          | Default |
+| :-------- | :-------- | :----------------------------------- | :------ |
+| loading   | boolean   | Loading status                       | false   |
+| text      | string    | Customize description content        | -       |
+| indicator | ReactNode | React node of the spinning indicator | -       |
