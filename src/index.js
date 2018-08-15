@@ -13,9 +13,11 @@ export default class LoadingMask extends React.PureComponent {
     const { loading, prefixCls, indicator } = this.props;
     const { loadingText } = this.props;
     const loadingCss = loading ? prefixCls : `${prefixCls}-hide`;
+    const { className, style } = this.props;
+    const css = `${className} ${loadingCss}`;
 
     return (
-      <div className={loadingCss}>
+      <div className={css} style={style}>
         <div className={`${prefixCls}-mask`}>
           <div className={`${prefixCls}-icon`}>{indicator}</div>
           <div className={`${prefixCls}-text`}>{loadingText}</div>
