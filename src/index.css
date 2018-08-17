@@ -1,3 +1,18 @@
 .customize.rc-loading::after {
-  background-color: blue;
+  background-color: #3f6600;
+}
+
+@keyframes horizon {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animation-horizon {
+  position: absolute;
+  animation: horizon 3s linear infinite;
+  transform: rotateZ(45deg);
 }
