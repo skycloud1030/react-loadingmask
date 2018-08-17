@@ -1,7 +1,7 @@
 {
   "name": "react-loadingmask",
-  "version": "4.0.0",
-  "description": "react-loadingmask",
+  "version": "4.0.1",
+  "description": "A Loading Component for displaying loading state of a page or a section",
   "license": "MIT",
   "main": "dist/react-loadingmask.js",
   "keywords": [

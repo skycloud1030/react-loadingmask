@@ -1,3 +1,21 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fade-in-move-down {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .rc-loading,
 .rc-loading-hide {
   position: relative;
@@ -22,21 +40,13 @@
   z-index: 1;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 .rc-loading-mask {
   position: absolute;
   height: 100%;
   width: 100%;
   text-align: center;
   z-index: 0;
+  overflow: hidden;
 }
 .rc-loading .rc-loading-content {
   opacity: 0.5;
@@ -80,4 +90,13 @@
   padding-top: 24px;
   font-size: 14px;
   opacity: 1;
+}
+
+.rc-loading-spin {
+  animation: spin 2s infinite linear;
+}
+
+.rc-loading-move-right {
+  position: absolute;
+  animation: fade-in-move-down 5s linear infinite;
 }
