@@ -1,6 +1,6 @@
 {
   "name": "react-loadingmask",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A Loading Component for displaying loading state of a page or a section",
   "license": "MIT",
   "main": "dist/react-loadingmask.js",
@@ -27,22 +27,22 @@
   ],
   "dependencies": {
     "classnames": "^2.2.6",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-jest": "^23.2.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "coveralls": "^3.0.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^23.5.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0",
     "react-loader": "^2.4.5",
-    "webpack": "^4.12.2",
-    "webpack-cli": "^3.0.8"
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   }
 }
