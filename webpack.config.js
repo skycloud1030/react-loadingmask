@@ -1,12 +1,12 @@
-var path = require("path");
+const path = require("path");
 
 var config = {
   entry: {
-    index: path.resolve(__dirname, "src/index.js")
+    index: path.resolve(__dirname, "src/index.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].js"
+    filename: "[name].js",
   },
   resolve: { alias: {} },
   module: {
@@ -15,15 +15,12 @@ var config = {
         test: /\.js[x]?$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
-        query: {
-          presets: ["env", "stage-0", "react"]
-        }
       },
       {
         test: /\.css$/,
-        loader: "style-loader!css-loader"
-      }
-    ]
-  }
+        loader: "style-loader!css-loader",
+      },
+    ],
+  },
 };
 module.exports = config;
