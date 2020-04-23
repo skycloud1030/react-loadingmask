@@ -11,7 +11,8 @@ var config = {
     filename: "[name].js",
     library: "reactLoadingMask",
     libraryTarget: "umd",
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: `(typeof self !== 'undefined' ? self : this)`
   },
   externals: {
     "react": "react",
